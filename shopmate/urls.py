@@ -24,4 +24,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name = 'home'), #from views file, so we create the views.py file 
     path('store/', include('store.urls')), 
+    path('cart/', include('carts.urls')), 
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
